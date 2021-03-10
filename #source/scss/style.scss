@@ -1,0 +1,300 @@
+@import "nullstyle.scss";
+
+// Размер экрана
+$w: 1343;
+$h: 656;
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    background: black url("/img/bokeh_car_lights_bg.jpg") center/cover no-repeat;
+    opacity: 1;
+    height: 597*100vh/$h;
+    .header__content{
+        display: flex;
+        flex-direction: column;
+        max-width: 1260*100vw/$w;
+        margin: 0 auto;
+        padding-top: 25*100vh/$h;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 145*100vh/$h;
+            h1{
+                a{
+                    font-size: 2em;
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: space-around;
+                li{
+                    margin-left: 37*100vw/$w;
+                    padding: 10*100vh/$h 16*100vw/$w;
+                    padding-bottom: 8*100vh/$h;
+                    margin-top: -10*100vh/$h;
+                    margin-bottom: -8*100vh/$h;
+                    border-radius: 15vw;
+                    a{
+                        font-size: 1.5em;
+                        color: #8d999b;
+                    }
+                    &:hover{
+                        background: white;
+                    }
+                }
+            }
+        }  
+    
+        .inroduction{
+            color: white;
+            height: 200*100vh/$h;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            h2{
+                font-size: 5em;
+                font-weight: 600;
+            }
+            p{
+                font-size: 2em;
+            }
+            a{
+                color: white;
+                background-color: #3cadd4;
+                border-radius: 15vw;
+                font-size: 2em;
+                padding: 10*100vh/$h 40*100vw/$w;
+            }
+        }
+        
+    }
+}
+
+.about-us {
+    height: 651*100vh/$h;
+    background: url("/img/bg.jpg");
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    &__content{
+    max-width: 1140*100vw/$w;
+    margin: 0 auto;
+    padding-top: 95*100vh/$h;
+    }
+    &__title{
+        text-align: center;
+        font-size: 3em;
+        color: #474747;
+        font-weight: 700;
+        margin-bottom: 17*100vh/$h;
+    }
+    &__subtitle{
+        font-size: 1.5em;
+        color: #958585;
+        text-align: center;
+        margin-bottom: 62*100vh/$h;
+    }
+    &__row {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .column {
+        border: 1px solid #e3e3e3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 12*100vw/$w;
+        padding: 45*100vh/$h 42*100vw/$w;
+        &:last-child{
+            margin-right: 0;
+        }
+    
+    
+    
+        &__title {
+            font-size: 2em;
+            color: #858585;
+            font-weight: 500;
+            margin-bottom: 28*100vh/$h;
+        }
+    
+        &__image {
+            margin-bottom: 24*100vh/$h; 
+            img{
+                max-width: 100%;
+                border-radius: 50%;
+            }
+        }
+    
+        &__text {
+            font-size: 1.5em;
+            color: #5b5b5b;
+            font-weight: 300;
+            line-height: 1.5em;
+            text-align: center;
+        }
+    }
+}
+
+.workers {
+    max-width: 1140*100vw/$w;
+    margin: 0 auto;
+    margin-bottom: 48*100vh/$h;
+    &__content {
+    
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        a{
+            color: white;
+            background-color: #3cadd4;
+            font-size: 2em;
+            border-radius: 15vw;
+            padding: 15*100vh/$h 39*100vw/$w;
+        }
+    }
+
+    &__title {
+        color: #474747;
+        font-size: 3em;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 96*100vh/$h;
+        margin-bottom: 15*100vh/$h;
+    }
+
+    &__subtitle {
+        color: #978585;
+        font-size: 1.5em;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 62*100vh/$h;
+    }
+
+    &__row {
+        width: 1140*100vw/$w;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
+        padding-top: 56*100vh/$h;
+        padding-bottom: 44*100vh/$h;
+        margin-bottom: 60*100vh/$h;
+    }
+
+    &__column {
+        margin-right: 68*100vw/$w;
+        display: flex;
+    }
+    &__double {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 14*100vw/$w;
+    }
+    &__text{
+        font-size: 1.2em;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 46*100vh/$h;
+    }
+    
+}
+.column {
+
+    &__image {
+        img{
+            border-radius: 50%;
+        }
+    }
+
+    &__title {
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-bottom: 8*100vh/$h;
+    }
+
+    &__text {
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+}
+
+footer{
+    background-color: #3cadd4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer__intro {
+        margin-bottom: 60*100vh/$h;
+        margin-top: 100*100vh/$h;
+        h3{
+            text-align: center;
+            color: white;
+            font-size: 3em;
+            font-weight: 600;
+            margin-bottom: 16*100vh/$h;
+        }
+        p{
+            color: #ecfffb;
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+        }
+    button{
+        font-size: 2em;
+        color: white;
+        font-weight: 300;
+        padding: 16*100vh/$h 38*100vw/$w 18*100vh/$h 38*100vw/$w;
+        background-color: #383b43;
+        border-radius: 5vw;
+        margin-bottom: 80*100vh/$h;
+    }
+}
+.form {
+    max-width: 570*100vw/$w;
+    margin: 0 auto;
+    margin-bottom: 30*100vh/$h;
+
+    .footer__account {
+        display: flex;
+        margin-bottom: 28*100vh/$h;
+    }
+
+    input {
+            width: 272*100vw/$w;
+            height: 39*100vh/$h;
+            padding-left: 16*100vw/$w;
+            padding-right: 16*100vw/$w;
+            font-size: 1.3em;
+            font-weight: 350;
+            border-radius: 5px;
+    }
+
+	&__name {
+        flex: 0 1 50%;
+    }
+
+	&__email {
+        flex: 0 1 50%;
+    }
+
+    textarea{
+        width: 570*100vw/$w;
+        height: 160*100vh/$h;
+        padding-top: 13*100vh/$h;
+        padding-left: 16*100vw/$w;
+        padding-right: 16*100vw/$w;
+        font-size: 1.3em;
+        font-weight: 350;
+        border-radius: 5px;
+        resize: none;
+    }    
+}
